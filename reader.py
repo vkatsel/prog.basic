@@ -8,5 +8,6 @@ for grade in data:
     for language in data[grade]:
         print(f'---- {language}')
         for student in data[grade][language]:
-            print(*student, sep=', ', end='; ')
+            print('     ', end='')
+            print(*student, sep=', ')
         print()
